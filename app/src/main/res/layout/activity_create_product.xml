@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".CreateProduct">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+
+            android:hint="Product id"
+            android:id="@+id/pid"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ProductNameEdit"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/PriceEdit"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:textSize="20sp"
+            android:id="@+id/EditQuanity"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+
+            android:textColorHint="#ffffff"
+            android:padding="10dp"
+            android:hint="Descritption"
+            android:id="@+id/DescribeEdit"
+            android:layout_marginTop="20dp"
+            android:inputType="textMultiLine"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+
+            android:textSize="20dp"
+            android:id="@+id/createProduct"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create Product"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
